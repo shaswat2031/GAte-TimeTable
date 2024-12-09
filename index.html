@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <br>
+    <br>
+    <section>
+        <!-- Section 1: Engineering Mathematics -->
+        <div class="topic-group">
+            <h2>Discrete Mathematics</h2>
+            <div class="checkbox"><input type="checkbox" id="logic"><label for="logic">Propositional and first-order logic</label></div>
+            <div class="checkbox"><input type="checkbox" id="sets"><label for="sets">Sets, relations, functions, partial orders, and lattices</label></div>
+            <div class="checkbox"><input type="checkbox" id="monoids"><label for="monoids">Monoids, Groups</label></div>
+            <div class="checkbox"><input type="checkbox" id="graphs"><label for="graphs">Graphs: connectivity, matching, colouring</label></div>
+            <div class="checkbox"><input type="checkbox" id="combinatorics"><label for="combinatorics">Combinatorics: counting, recurrence relations, generating functions</label></div>
+        </div>
+        <div class="topic-group">
+            <h2>Linear Algebra</h2>
+            <div class="checkbox"><input type="checkbox" id="matrices"><label for="matrices">Matrices, determinants, system of linear equations</label></div>
+            <div class="checkbox"><input type="checkbox" id="eigenvalues"><label for="eigenvalues">Eigenvalues and eigenvectors</label></div>
+            <div class="checkbox"><input type="checkbox" id="lu"><label for="lu">LU decomposition</label></div>
+        </div>
+        <div class="topic-group">
+            <h2>Calculus</h2>
+            <div class="checkbox"><input type="checkbox" id="limits"><label for="limits">Limits, continuity and differentiability</label></div>
+            <div class="checkbox"><input type="checkbox" id="maxima"><label for="maxima">Maxima and minima</label></div>
+            <div class="checkbox"><input type="checkbox" id="mvt"><label for="mvt">Mean value theorem</label></div>
+            <div class="checkbox"><input type="checkbox" id="integration"><label for="integration">Integration</label></div>
+        </div>
+        <div class="topic-group">
+            <h2>Probability and Statistics</h2>
+            <div class="checkbox"><input type="checkbox" id="random-variables"><label for="random-variables">Random variables</label></div>
+            <div class="checkbox"><input type="checkbox" id="distributions"><label for="distributions">Uniform, normal, exponential, Poisson and binomial distributions</label></div>
+            <div class="checkbox"><input type="checkbox" id="statistics"><label for="statistics">Mean, median, mode, and standard deviation</label></div>
+            <div class="checkbox"><input type="checkbox" id="conditional"><label for="conditional">Conditional probability and Bayes theorem</label></div>
+        </div>
+        
+        <!-- Section 2: Digital Logic -->
+        <div class="topic-group">
+            <h2>Digital Logic</h2>
+            <div class="checkbox"><input type="checkbox" id="boolean"><label for="boolean">Boolean algebra</label></div>
+            <div class="checkbox"><input type="checkbox" id="circuits"><label for="circuits">Combinational and sequential circuits</label></div>
+            <div class="checkbox"><input type="checkbox" id="minimization"><label for="minimization">Minimization</label></div>
+            <div class="checkbox"><input type="checkbox" id="arithmetic"><label for="arithmetic">Number representations and computer arithmetic (fixed and floating point)</label></div>
+        </div>
+        
+        <!-- Section 3: Computer Organization and Architecture -->
+        <div class="topic-group">
+            <h2>Computer Organization and Architecture</h2>
+            <div class="checkbox"><input type="checkbox" id="instructions"><label for="instructions">Machine instructions and addressing modes</label></div>
+            <div class="checkbox"><input type="checkbox" id="alu"><label for="alu">ALU, data-path and control unit</label></div>
+            <div class="checkbox"><input type="checkbox" id="pipelining"><label for="pipelining">Instruction pipelining, pipeline hazards</label></div>
+            <div class="checkbox"><input type="checkbox" id="memory"><label for="memory">Memory hierarchy: cache, main memory and secondary storage</label></div>
+            <div class="checkbox"><input type="checkbox" id="io-interface"><label for="io-interface">I/O interface (interrupt and DMA mode)</label></div>
+        </div>
+        
+        <!-- Section 4: Programming and Data Structures -->
+        <div class="topic-group">
+            <h2>Programming and Data Structures</h2>
+            <div class="checkbox"><input type="checkbox" id="c-programming"><label for="c-programming">Programming in C</label></div>
+            <div class="checkbox"><input type="checkbox" id="recursion"><label for="recursion">Recursion</label></div>
+            <div class="checkbox"><input type="checkbox" id="data-structures"><label for="data-structures">Arrays, stacks, queues, linked lists, trees, binary search trees, binary heaps, graphs</label></div>
+        </div>
+        
+        <!-- Section 5: Algorithms -->
+        <div class="topic-group">
+            <h2>Algorithms</h2>
+            <div class="checkbox"><input type="checkbox" id="searching-sorting"><label for="searching-sorting">Searching, sorting, hashing</label></div>
+            <div class="checkbox"><input type="checkbox" id="complexity"><label for="complexity">Asymptotic worst case time and space complexity</label></div>
+            <div class="checkbox"><input type="checkbox" id="design-techniques"><label for="design-techniques">Algorithm design techniques: greedy, dynamic programming and divide-and-conquer</label></div>
+            <div class="checkbox"><input type="checkbox" id="graph-algorithms"><label for="graph-algorithms">Graph traversals, minimum spanning trees, shortest paths</label></div>
+        </div>
+
+        <div class="topic-group">
+            <h2>Theory of Computation</h2>
+            <div class="checkbox"><input type="checkbox" id="regular-expressions"><label for="regular-expressions">Regular expressions and finite automata</label></div>
+            <div class="checkbox"><input type="checkbox" id="context-free-grammars"><label for="context-free-grammars">Context-free grammars and push-down automata</label></div>
+            <div class="checkbox"><input type="checkbox" id="languages"><label for="languages">Regular and context-free languages, pumping lemma</label></div>
+            <div class="checkbox"><input type="checkbox" id="turing-machines"><label for="turing-machines">Turing machines and undecidability</label></div>
+        </div>
+        
+        <!-- Section 7: Compiler Design -->
+        <div class="topic-group">
+            <h2>Compiler Design</h2>
+            <div class="checkbox"><input type="checkbox" id="lexical-analysis"><label for="lexical-analysis">Lexical analysis</label></div>
+            <div class="checkbox"><input type="checkbox" id="parsing"><label for="parsing">Parsing</label></div>
+            <div class="checkbox"><input type="checkbox" id="syntax-directed"><label for="syntax-directed">Syntax-directed translation</label></div>
+            <div class="checkbox"><input type="checkbox" id="runtime-environments"><label for="runtime-environments">Runtime environments</label></div>
+            <div class="checkbox"><input type="checkbox" id="intermediate-code"><label for="intermediate-code">Intermediate code generation</label></div>
+            <div class="checkbox"><input type="checkbox" id="local-optimisation"><label for="local-optimisation">Local optimisation</label></div>
+            <div class="checkbox"><input type="checkbox" id="data-flow-analysis"><label for="data-flow-analysis">Data flow analyses: constant propagation, liveness analysis, common sub-expression elimination</label></div>
+        </div>
+        
+        <!-- Section 8: Operating System -->
+        <div class="topic-group">
+            <h2>Operating System</h2>
+            <div class="checkbox"><input type="checkbox" id="system-calls"><label for="system-calls">System calls</label></div>
+            <div class="checkbox"><input type="checkbox" id="processes-threads"><label for="processes-threads">Processes, threads, inter-process communication</label></div>
+            <div class="checkbox"><input type="checkbox" id="concurrency"><label for="concurrency">Concurrency and synchronization</label></div>
+            <div class="checkbox"><input type="checkbox" id="deadlock"><label for="deadlock">Deadlock</label></div>
+            <div class="checkbox"><input type="checkbox" id="scheduling"><label for="scheduling">CPU and I/O scheduling</label></div>
+            <div class="checkbox"><input type="checkbox" id="memory-management"><label for="memory-management">Memory management and virtual memory</label></div>
+            <div class="checkbox"><input type="checkbox" id="file-systems"><label for="file-systems">File systems</label></div>
+        </div>
+
+        <div class="topic-group">
+            <h2>Databases</h2>
+            <div class="checkbox"><input type="checkbox" id="er-model"><label for="er-model">ER-model</label></div>
+            <div class="checkbox"><input type="checkbox" id="relational-model"><label for="relational-model">Relational model: relational algebra, tuple calculus, SQL</label></div>
+            <div class="checkbox"><input type="checkbox" id="integrity-constraints"><label for="integrity-constraints">Integrity constraints, normal forms</label></div>
+            <div class="checkbox"><input type="checkbox" id="file-organization"><label for="file-organization">File organization, indexing (e.g., B and B+ trees)</label></div>
+            <div class="checkbox"><input type="checkbox" id="transactions"><label for="transactions">Transactions and concurrency control</label></div>
+        </div>
+        
+        <!-- Section 10: Computer Networks -->
+        <div class="topic-group">
+            <h2>Computer Networks</h2>
+            <div class="checkbox"><input type="checkbox" id="layering"><label for="layering">Concept of layering: OSI and TCP/IP Protocol Stacks</label></div>
+            <div class="checkbox"><input type="checkbox" id="switching"><label for="switching">Basics of packet, circuit, and virtual circuit switching</label></div>
+            <div class="checkbox"><input type="checkbox" id="data-link-layer"><label for="data-link-layer">Data link layer: framing, error detection, Medium Access Control, Ethernet bridging</label></div>
+            <div class="checkbox"><input type="checkbox" id="routing-protocols"><label for="routing-protocols">Routing protocols: shortest path, flooding, distance vector and link state routing</label></div>
+            <div class="checkbox"><input type="checkbox" id="fragmentation-ip"><label for="fragmentation-ip">Fragmentation and IP addressing, IPv4, CIDR notation</label></div>
+            <div class="checkbox"><input type="checkbox" id="ip-support-protocols"><label for="ip-support-protocols">Basics of IP support protocols (ARP, DHCP, ICMP)</label></div>
+            <div class="checkbox"><input type="checkbox" id="nat"><label for="nat">Network Address Translation (NAT)</label></div>
+            <div class="checkbox"><input type="checkbox" id="transport-layer"><label for="transport-layer">Transport layer: flow control and congestion control, UDP, TCP, sockets</label></div>
+            <div class="checkbox"><input type="checkbox" id="application-layer"><label for="application-layer">Application layer protocols: DNS, SMTP, HTTP, FTP, Email</label></div>
+        </div>
+    </section>
+    <script>
+    // Function to save checkbox states to local storage
+    function saveCheckboxStates() {
+        const checkboxes = document.querySelectorAll('.checkbox input');
+        const checkboxStates = {};
+        checkboxes.forEach(checkbox => {
+            checkboxStates[checkbox.id] = checkbox.checked; // Save id and state
+        });
+        // Store in localStorage
+        localStorage.setItem('checkboxStates', JSON.stringify(checkboxStates));
+    }
+
+    // Function to load checkbox states from local storage
+    function loadCheckboxStates() {
+        const checkboxStates = JSON.parse(localStorage.getItem('checkboxStates')) || {};
+        const checkboxes = document.querySelectorAll('.checkbox input');
+        checkboxes.forEach(checkbox => {
+            if (checkbox.id in checkboxStates) {
+                checkbox.checked = checkboxStates[checkbox.id];
+            }
+        });
+    }
+
+    // Add event listeners to save state on change
+    document.addEventListener('DOMContentLoaded', () => {
+        loadCheckboxStates();
+        const checkboxes = document.querySelectorAll('.checkbox input');
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', saveCheckboxStates);
+        });
+    });
+
+    </script>
+</body>
+</html>
