@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <br>
-    <br>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+        <div class="progress-summary" id="progress-summary">
+            Completed: 0/0 (0%)
+        </div>
+    </div>
     <section>
         <!-- Section 1: Engineering Mathematics -->
         <div class="topic-group">
@@ -131,38 +135,6 @@
             <div class="checkbox"><input type="checkbox" id="application-layer"><label for="application-layer">Application layer protocols: DNS, SMTP, HTTP, FTP, Email</label></div>
         </div>
     </section>
-    <script>
-    // Function to save checkbox states to local storage
-    function saveCheckboxStates() {
-        const checkboxes = document.querySelectorAll('.checkbox input');
-        const checkboxStates = {};
-        checkboxes.forEach(checkbox => {
-            checkboxStates[checkbox.id] = checkbox.checked; // Save id and state
-        });
-        // Store in localStorage
-        localStorage.setItem('checkboxStates', JSON.stringify(checkboxStates));
-    }
-
-    // Function to load checkbox states from local storage
-    function loadCheckboxStates() {
-        const checkboxStates = JSON.parse(localStorage.getItem('checkboxStates')) || {};
-        const checkboxes = document.querySelectorAll('.checkbox input');
-        checkboxes.forEach(checkbox => {
-            if (checkbox.id in checkboxStates) {
-                checkbox.checked = checkboxStates[checkbox.id];
-            }
-        });
-    }
-
-    // Add event listeners to save state on change
-    document.addEventListener('DOMContentLoaded', () => {
-        loadCheckboxStates();
-        const checkboxes = document.querySelectorAll('.checkbox input');
-        checkboxes.forEach(checkbox => {
-            checkbox.addEventListener('change', saveCheckboxStates);
-        });
-    });
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
